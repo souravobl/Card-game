@@ -1,0 +1,41 @@
+p{
+  text-align: center;
+}
+body{
+  background-image:url(image.jpg);
+  color:white;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+h1
+{
+  text-align: center;
+  color: gold;
+}
+
+#message1{
+  font-style: italic;
+}
+.startgame{
+  color:#016f32;
+  width: 150px;
+  background-color: red;
+    color: gold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+.newCard{
+  color:#016f32;
+  width: 150px;
+  background-color: green;
+  color: gold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: none;
+  border-radius: 2px;
+}
