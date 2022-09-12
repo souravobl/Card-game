@@ -91,7 +91,7 @@ function NewCard(){
       sum=0
       s=""
       var x = document.createElement("BUTTON");
-      var t = document.createTextNode("Claim Rewards");
+   
       x.appendChild(t);
       document.body.appendChild(x);
       x.id="claim"
