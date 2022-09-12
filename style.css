@@ -6,7 +6,9 @@ body{
   color:white;
   font-weight: bold;
   text-align: center;
-
+a{
+  color:gold;
+}
 
 }
 h1
