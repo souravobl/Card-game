@@ -14,19 +14,19 @@ let card= Math.floor((Math.random() *13)) +1
 sum=card
 if (card===1)
 {
-  s=s+ "A"
+  s=s+ "A "
 }
 else if (card===11)
 {
-  s=s+ "J"
+  s=s+ "J "
 }
 else if (card===12)
 {
-  s=s+ "Q"
+  s=s+ "Q "
 }
 else if (card===13)
 {
-  s=s+ "K"
+  s=s+ "K "
 }
 else {
 s=s+ card + " "
@@ -43,19 +43,19 @@ function NewCard(){
   let card=  Math.floor((Math.random() *12)) +1
   if (card===1)
   {
-    s=s+ "A"
+    s=s+ "A "
   }
   else if (card===11)
   {
-    s=s+ "J"
+    s=s+ "J "
   }
   else if (card===12)
   {
-    s=s+ "Q"
+    s=s+ "Q "
   }
   else if (card===13)
   {
-    s=s+ "K"
+    s=s+ "K "
   }
   else{
     s+=card+" "
@@ -78,6 +78,8 @@ function NewCard(){
     document.getElementById("startGame").disabled = false;
     Cardresult.innerText= "Your cards :" + s;
     s=""
+    let win=document.getElementById("winmsg")
+    win.innerHTML='<a href="https://www.instagram.com/souravobl/">Claim your rewards!</a>'
 
 
 
@@ -85,20 +87,14 @@ function NewCard(){
   {
       let showMessage= document.getElementById("message1")
       showMessage.style.color = "#EB1D36";
-      showMessage.innerText=`Sorry ${person} 😭!! You have Lost ${amount}.But never Give Up.You will definetly win next time.Play Oncemore`
+      showMessage.innerText=`Sorry ${person} 😭!! You have Lost ${amount} $.But never Give Up.You will definetly win next time.Play Oncemore`
       document.getElementById("NewGame").disabled = true;
       document.getElementById("startGame").disabled = false;
       sum=0
       s=""
-      var x = document.createElement("BUTTON");
-   
-      x.appendChild(t);
-      document.body.appendChild(x);
-      x.id="claim"
-      x.width="250px"
-      x.border="none"
-      document.getElementById("claim").innerHTML="You can contact us on 7908117234.Additionally, you may click<a href='https://www.instagram.com/souravobl/'> here </a>"
-      console.log(x.innerHTML)
+      let win=document.getElementById("winmsg")
+
+  win.innerHTML='<a  href="https://www.linkedin.com/in/sourav-mondal-992975170/">You can ask him how to win!</a>'
 
 
 }
