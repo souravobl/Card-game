@@ -2,6 +2,7 @@ let person
 let amount
 let sum=0
 s=""
+
 function startGame()
 {
 person = prompt("Please enter your name");
@@ -9,9 +10,27 @@ person = prompt("Please enter your name");
 amount = prompt("How much you want to win:");
 document.getElementById("name").innerText= `${person} :$ ${amount}`
 document.getElementById("NewGame").disabled =false;
-let card= Math.floor((Math.random() *12)) +1
+let card= Math.floor((Math.random() *13)) +1
 sum=card
+if (card===1)
+{
+  s=s+ "A"
+}
+else if (card===11)
+{
+  s=s+ "J"
+}
+else if (card===12)
+{
+  s=s+ "Q"
+}
+else if (card===13)
+{
+  s=s+ "K"
+}
+else {
 s=s+ card + " "
+}
 let Cardresult= document.getElementById("card");
 Cardresult.innerText= "card :" + s;
 let sumResult= document.getElementById("sum");
@@ -22,8 +41,27 @@ document.getElementById("startGame").disabled = true;
 
 function NewCard(){
   let card=  Math.floor((Math.random() *12)) +1
+  if (card===1)
+  {
+    s=s+ "A"
+  }
+  else if (card===11)
+  {
+    s=s+ "J"
+  }
+  else if (card===12)
+  {
+    s=s+ "Q"
+  }
+  else if (card===13)
+  {
+    s=s+ "K"
+  }
+  else{
+    s+=card+" "
+  }
   sum+=card
-  s+=card+" "
+
   let Cardresult= document.getElementById("card");
   Cardresult.innerText= "card :" + s;
   let sumResult= document.getElementById("sum");
@@ -59,7 +97,7 @@ function NewCard(){
       x.id="claim"
       x.width="250px"
       x.border="none"
-      document.getElementById("claim").innerHTML="You can contact us on 7907117234 .Additionally, you may click<a href='https://www.instagram.com/souravobl/'> here </a>"
+      document.getElementById("claim").innerHTML="You can contact us on 7908117234.Additionally, you may click<a href='https://www.instagram.com/souravobl/'> here </a>"
       console.log(x.innerHTML)
 
 
